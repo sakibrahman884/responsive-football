@@ -13,6 +13,11 @@ button{
 }
 /* top part styles */
 
+/* hover in top  */
+.top:hover{
+    transform: scale(1.3);
+    transition: transform 3s;
+}
 .top{
     display: grid;
     grid-template-columns: repeat(2,1fr);
