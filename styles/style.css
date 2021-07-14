@@ -136,3 +136,58 @@ button{
     color: #000000;
 }
 
+/*-----------------------------------
+-----------Media Queries ------------
+------------------------------- -----*/
+/* Mobile Devices */
+@media only screen and (max-width:688px){
+    .top{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        width: 50%;
+    }
+    .others{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        width: 100%;
+    }
+    .top-title{
+        margin-bottom: 100px;
+    }
+    .players{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+    .player{
+        flex-direction: column;
+    }
+    .match{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+        margin: none;
+        width: 50%;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: right;
+        justify-items: center;
+        width: 170px;
+        height: 300px;
+        margin: none;
+    }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .top{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .player{
+        flex-direction: column;
+    }
+}
